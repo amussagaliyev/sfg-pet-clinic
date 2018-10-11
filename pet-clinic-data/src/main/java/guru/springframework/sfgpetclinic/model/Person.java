@@ -6,7 +6,7 @@ package guru.springframework.sfgpetclinic.model;
  * of HireRight, Inc. Use is subject to license terms.
  */
 
-public class Person
+public class Person extends BaseEntity
 {
 	private String firstName;
 	private String lastName;

@@ -6,17 +6,19 @@ package guru.springframework.sfgpetclinic.model;
  * of HireRight, Inc. Use is subject to license terms.
  */
 
-public class PetType extends BaseEntity
-{
-	private String name;
+import java.io.Serializable;
 
-	public String getName()
+public class BaseEntity implements Serializable
+{
+	private Long id;
+
+	public Long getId()
 	{
-		return name;
+		return id;
 	}
 
-	public void setName(String name)
+	public void setId(Long id)
 	{
-		this.name = name;
+		this.id = id;
 	}
 }
