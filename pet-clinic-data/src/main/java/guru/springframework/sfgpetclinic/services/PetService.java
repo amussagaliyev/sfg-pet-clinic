@@ -6,16 +6,8 @@ package guru.springframework.sfgpetclinic.services;
  * of HireRight, Inc. Use is subject to license terms.
  */
 
-import guru.springframework.sfgpetclinic.model.Owner;
 import guru.springframework.sfgpetclinic.model.Pet;
 
-import java.util.Set;
-
-public interface PetService
+public interface PetService extends CrudService<Pet, Long>
 {
-	Pet findById(Long id);
-
-	Pet save(Pet owner);
-
-	Set<Pet> findAll();
 }
