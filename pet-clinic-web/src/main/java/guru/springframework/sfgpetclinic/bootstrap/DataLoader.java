@@ -1,11 +1,5 @@
 package guru.springframework.sfgpetclinic.bootstrap;
 
-/*
- * Copyright 2001-2018 by HireRight, Inc. All rights reserved.
- * This software is the confidential and proprietary information
- * of HireRight, Inc. Use is subject to license terms.
- */
-
 import guru.springframework.sfgpetclinic.model.Owner;
 import guru.springframework.sfgpetclinic.model.Vet;
 import guru.springframework.sfgpetclinic.services.OwnerService;

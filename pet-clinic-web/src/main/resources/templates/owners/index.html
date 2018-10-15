@@ -1,10 +1,4 @@
 <!DOCTYPE html>
-<!--
-  ~ Copyright 2001-2018 by HireRight, Inc. All rights reserved.
-  ~ This software is the confidential and proprietary information
-  ~ of HireRight, Inc. Use is subject to license terms.
-  -->
-
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
@@ -12,5 +6,22 @@
 </head>
 <body>
     <h1 th:text="'List of Owners'">Owners List</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <td>Id</td>
+                <td>First Name</td>
+                <td>Last Name</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr th:each="owner : ${owners}">
+                <td th:text="${owner.id}">1</td>
+                <td th:text="${owner.firstName}">Joe</td>
+                <td th:text="${owner.lastName}">Buck</td>
+            </tr>
+        </tbody>
+    </table>
 </body>
 </html>
