@@ -1,11 +1,19 @@
 package guru.springframework.sfgpetclinic.model;
 
-/*
- * Copyright 2001-2018 by HireRight, Inc. All rights reserved.
- * This software is the confidential and proprietary information
- * of HireRight, Inc. Use is subject to license terms.
- */
+import java.util.Set;
 
 public class Vet extends Person
 {
+	private Set<Specialty> specialties;
+
+	public Set<Specialty> getSpecialties()
+	{
+		return specialties;
+	}
+
+	public void setSpecialties(Set<Specialty> specialties)
+	{
+		this.specialties = specialties;
+	}
+	
 }
